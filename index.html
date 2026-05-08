@@ -1,36 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Thank You</title>
-  <style>
-    body{
-      background:#0d1117;
-      color:#58a6ff;
-      font-family:Arial;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
+<meta charset="UTF-8">
+<title>Thank You</title>
+<style>
+    body {
+        margin: 0;
+        background: #0d1117;
+        color: #582055;
+        font-family: "Courier New", monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
     }
-    .box{
-      text-align:center;
-    }
-    .green{ color:#3fb950; }
-  </style>
-</head>
 
+    .box {
+        border: 1px solid #9e409a;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #d4dad7;
+        text-align: left;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    .title {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .code {
+        white-space: pre-wrap;
+        line-height: 1.5;
+    }
+
+    .cursor {
+        display: inline-block;
+        width: 10px;
+        background: #00ff88;
+        animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
+</style>
+</head>
 <body>
 
 <div class="box">
-  <h1>Backend </h1>
+<div class="title">💻 Backend Appreciation Message</div>
+<div class="code">
+const mentor = "Monsieur formateur";
 
-  <p class="green">✓ Express</p>
-  <p class="green">✓ MVC</p>
- 
+const message = `
+Thank you for introducing me to backend development.
+Your sessions made Express, MVC and APIs feel exciting.
 
-  <br>
+I truly enjoyed learning from your explanations.
+`;
 
-  <p>Thank you .</p>
+console.log(message);
+
+<span class="cursor"></span>
+</div>
 </div>
 
 </body>
